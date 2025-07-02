@@ -45,6 +45,25 @@ Este projeto foi desenvolvido como parte do desafio técnico da Serasa Experian,
 
 ---
 
+Executando a aplicação com Docker
+A aplicação já está configurada para subir completamente via Docker, incluindo o banco de dados PostgreSQL.
+
+Subir a aplicação:
+docker-compose up --build
+
+O backend estará acessível em: http://localhost:3000
+A documentação Swagger estará disponível em: http://localhost:3000/api
+
+Rodando os testes
+Testes unitários
+npm run test
+
+Testes de integração (e2e)
+Para rodar os testes e2e com o banco já no ar via Docker:
+
+npm run test:e2e:docker
+
+
 ## Testes
 
 ```bash
