@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "c1df847a-005c-43b4-bf5f-caad53f9e721",
+		"name": "Brain Agriculture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14128949"
+	},
+	"item": [
+		{
+			"name": "Producer (Produtor)",
+			"item": [
+				{
+					"name": "New Producer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/producers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"producers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Producer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/producers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"producers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id Producer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/producers/d6e6598b-38e2-43b4-9aa0-d19dbb431434",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"producers",
+								"d6e6598b-38e2-43b4-9aa0-d19dbb431434"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Producer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Produtor Editado\",\n  \"document\": \"99900000000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/producers/d6e6598b-38e2-43b4-9aa0-d19dbb431434",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"producers",
+								"d6e6598b-38e2-43b4-9aa0-d19dbb431434"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Producer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Produtor Atualizado\",\n  \"document\": \"98765432100\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/producers/d2f62aa1-2a5b-4b9e-a112-d7adb6c2679d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"producers",
+								"d2f62aa1-2a5b-4b9e-a112-d7adb6c2679d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Property (Propriedades)",
+			"item": [
+				{
+					"name": "Relation Properties",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Fazenda de café\",\n  \"city\": \"Curitiba\",\n  \"state\": \"PR\",\n  \"totalArea\": 3554.23,\n  \"agriculturalArea\": 423.5,\n  \"vegetationArea\": 199.99,\n  \"producerId\": \"ba0820e0-1950-41f3-974e-41febb655d82\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"properties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Properties",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"properties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id Properties",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/properties/5fe7733c-6202-468d-9f50-70c25065a5af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"properties",
+								"5fe7733c-6202-468d-9f50-70c25065a5af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Property",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Fazenda testando geral editado\",\n  \"city\": \"Curitiba\",\n  \"state\": \"PR\",\n  \"totalArea\": 3554.23,\n  \"agriculturalArea\": 423.5,\n  \"vegetationArea\": 199.99,\n  \"producerId\": \"5112aa9f-6bf4-448c-a695-f7f0eb83d4c7\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/properties/5fe7733c-6202-468d-9f50-70c25065a5af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"properties",
+								"5fe7733c-6202-468d-9f50-70c25065a5af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Properties",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/properties/5fe7733c-6202-468d-9f50-70c25065a5af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"properties",
+								"5fe7733c-6202-468d-9f50-70c25065a5af"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Harvest (Safras)",
+			"item": [
+				{
+					"name": "New Harvests",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"season\": \"Safra 2025\",\n    \"propertyId\": \"f119cf55-0387-48d7-8b5d-6ccc1146a742\",\n    \"crops\": [\n        {\n            \"name\": \"Milho\"\n        },\n                {\n            \"name\": \"Café\"\n        },\n                {\n            \"name\": \"Laranja\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/harvests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"harvests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Harvests",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/harvests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"harvests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id Harvests",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/harvests/5c562f68-51e3-4fe9-8e91-5a749174bf01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"harvests",
+								"5c562f68-51e3-4fe9-8e91-5a749174bf01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Harvests",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"season\": \"Safra 2025\",\n    \"propertyId\": \"d86271a1-6402-491a-a9c1-f6710dbfa4fd\",\n    \"crops\": [\n        {\n            \"name\": \"Milho\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/harvests/5c562f68-51e3-4fe9-8e91-5a749174bf01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"harvests",
+								"5c562f68-51e3-4fe9-8e91-5a749174bf01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Harvest",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/harvests/5c562f68-51e3-4fe9-8e91-5a749174bf01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"harvests",
+								"5c562f68-51e3-4fe9-8e91-5a749174bf01"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Crops (Culturas)",
+			"item": [
+				{
+					"name": "List Crops",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"culture\": \"Soja\",\n  \"harvestId\": 1,\n  \"propertyId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/crops",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"crops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id Crops",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/crops/560042e1-d71b-4457-8a97-e95fc1a854fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"crops",
+								"560042e1-d71b-4457-8a97-e95fc1a854fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Crops",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"560042e1-d71b-4457-8a97-e95fc1a854fc\",\n    \"name\": \"Cana-de-açucar\",\n    \"harvest\": {\n        \"id\": \"923d59ca-272d-4211-a525-cc3887c9ea45\",\n        \"season\": \"Safra 2025\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/crops/560042e1-d71b-4457-8a97-e95fc1a854fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"crops",
+								"560042e1-d71b-4457-8a97-e95fc1a854fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Crops",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/crops/560042e1-d71b-4457-8a97-e95fc1a854fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"crops",
+								"560042e1-d71b-4457-8a97-e95fc1a854fc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "Summary properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/dashboard/summary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dashboard",
+								"summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Charts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/dashboard/charts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"dashboard",
+								"charts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
